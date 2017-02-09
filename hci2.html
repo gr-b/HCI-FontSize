@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container" id="countdown" >
+	<h1> Starting in...</h1>
+	<hr>
+	<p style="font-size: 600px" id="counter">5</p>	
+</div> 
+
+<div class="container" id="question" hidden="true">
+	<h3> Please read the following text </h3>
+	<h3> Time(tenths of a second): </h3><h3 id="timer">0</h3>
+	<hr>
+	<p style="font-size: 8px; font-family: 'Times New Roman';" id="1">
+	Do you know the name Momofuku Ando? If you don't, you probably don't live in Japan, but you do know what made him famous 
+	- he invented the "instant" noodle, also called ramen noodles, that now you see in the soup aisle of every store.
+	<br><br>Ando was born in Taiwan. Faced with the inevitable food shortages in post-World War II Japan, Ando thought a 
+	quality, convenient noodle product would help to feed the masses.<br><br>At 23, he entered Ritsumeikan University 
+	and, at the same time, he founded a small merchandising firm in Osaka. The company went belly up, and Ando went bankrupt. 
+	However, he didn't give up. In 1948, he founded what later would become Nissin Co., in Ikeda, Osaka. It was a small, 
+	family-run company that initially produced salt.<br><br>Ando was sure a product with such simple instructions (remove 
+	the ramen from its package and place it in a bowl. Add boiling water, cover, and wait three minutes) would be a hit, 
+	but the Japanese food industry was critical. It rejected the product as a novelty with no future.<br><br>But they were 
+	wrong. The packages sold beyond anyone's expectations, and over ten other companies rushed to put their versions on the 
+	market. By the end of 1958, it was a staple.<br><br>Today, each Japanese person eats about 45 portions of ramen (bags 
+	and cups combined), each year. It's catching on in the U.S., too. Consumers there eat about nine portions each year.
+
+
+	</p>
+	<button type="button" id="haveRead" class="btn btn-primary">Done Reading</button>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	var interval = setInterval(function(){
+
+		var val = $("#counter").text();
+	
+		$("#counter").text(val - 1);
+		if(val == 1){ clearInterval(interval); readQuestion(); } 
+	
+	}, 1000);
+	//var loc = window.location.href;
+	//window.location.href = loc + "#" + name + "#" + email
+});
+
+function readQuestion(){
+	$("#countdown").hide();
+	$("#question").show();
+	
+	$("#timer").text(0);
+
+	timer = setInterval(function(){
+		var time = $("#timer").text();
+		$("#timer").text(parseInt(time)+1);
+	}, 100);
+}
+
+$("#haveRead").click(function(){
+	clearInterval(timer);
+	var time = parseInt($("#timer").text());
+	
+	var loc = window.location.href;
+	var curr = loc[loc.length-1];
+	loc[loc.length-1] = parseInt(curr) + 1;
+	var afterLoc = loc.split('?')[1];
+	window.location.href = "hci3.html?" + afterLoc + "#time1=" + time;
+
+
+});
+</script>
+</html>

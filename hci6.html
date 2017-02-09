@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container" id="countdown" >
+	<h1> Starting in...</h1>
+	<hr>
+	<p style="font-size: 600px" id="counter">5</p>	
+</div> 
+
+<div class="container" id="question" hidden="true">
+	<h3> Please read the following text </h3>
+	<h3> Time(tenths of a second): </h3><h3 id="timer">0</h3>
+	<hr>
+	<p style="font-size: 20px; font-family: 'Times New Roman';" id="1">
+	Born a slave on a Missouri farm in 1864, George Washington Carver grew to become one of the most prominent Black scientists of his time. He devoted his life to research projects involved with Southern agriculture, especially with peanuts. In fact, the products he derived from both peanuts and soybeans revolutionized the Southern economy. It released farmers from an excessive dependence on cotton.<br><br>He was raised by his owners, Moses and Susan Carver, after his father was killed and his mother was kidnapped by slave raiders. He showed an interest in plants and a great desire to learn new things. The Carvers taught him to read and write, and, when he was 11, he attended a school for Black children.<br><br>Despite his poor beginnings, Carver managed to obtain a high school education. He was then admitted as the first Black student of Simpson College in Iowa. He followed up at Iowa Agricultural College; while working as a janitor, he received a degree in agricultural science in 1894. Two years later, he received a Master's Degree from the same school and became the first African-American to serve on its faculty. Within a short time, his fame spread, and Booker T. Washington offered him a post at what is now Tuskegee University.<br><br>Among his many accomplishments, Carver developed more than 300 products from peanuts. These included a milk substitute, face powder, printer's ink, and soap. He also created more than 75 products from pecans, more than 100 more products from sweet potatoes, and a type of synthetic marble made from wood shavings.<br><br>The world took note. Carver received many awards for his work. In 1916, he was named a fellow of the Royal Society of Arts of London. In 1923, the National Association for the Advancement of Colored People (the NAACP) awarded him a medal for distinguished service in agricultural chemistry. In 1939, he received the Theodore Roosevelt Medal for his contributions to science.</p>
+
+
+
+
+	<!--</p>--!>
+	<button type="button" id="haveRead" class="btn btn-primary">Done Reading</button>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	var interval = setInterval(function(){
+
+		var val = $("#counter").text();
+	
+		$("#counter").text(val - 1);
+		if(val == 1){ clearInterval(interval); readQuestion(); } 
+	
+	}, 1000);
+	//var loc = window.location.href;
+	//window.location.href = loc + "#" + name + "#" + email
+});
+
+function readQuestion(){
+	$("#countdown").hide();
+	$("#question").show();
+	
+	$("#timer").text(0);
+
+	timer = setInterval(function(){
+		var time = $("#timer").text();
+		$("#timer").text(parseInt(time)+1);
+	}, 100);
+}
+
+$("#haveRead").click(function(){
+	clearInterval(timer);
+	var time = parseInt($("#timer").text());
+	
+	var loc = window.location.href;
+	var curr = loc[loc.length-1];
+	loc[loc.length-1] = parseInt(curr) + 1;
+	var afterLoc = loc.split('?')[1];
+	window.location.href = "hci7.html?" + afterLoc + "#time3=" + time;
+
+
+});
+</script>
+</html>

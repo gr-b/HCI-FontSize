@@ -1,0 +1,146 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container" id="question">
+	<h3> Awesome job! </h3>
+	<hr>
+	<p style="font-size: 8px; font-family: 'Times New Roman';" id="1">
+
+<form id="test_form" style="display: block;">
+                1. <div id="question_1">There are ______ rocky, inner planets.
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.a" name="q1" value="one">&nbsp;<span id="choice_1a_letter">A. </span><div id="choice_1a">three
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.b" name="q1" value="two">&nbsp;<span id="choice_1b_letter">B. </span><div id="choice_1b">four
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.c" name="q1" value="three">&nbsp;<span id="choice_1c_letter">C. </span><div id="choice_1c">five
+</div></label>
+                <span id="newline"><br></span>
+                2. <div id="question_2">The IAU voted to demote Pluto to a
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.a" name="q2" value="one">&nbsp;<span id="choice_2a_letter">A. </span><div id="choice_2a">planetoid.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.b" name="q2" value="two">&nbsp;<span id="choice_2b_letter">B. </span><div id="choice_2b">pluton.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.c" name="q2" value="three">&nbsp;<span id="choice_2c_letter">C. </span><div id="choice_2c">dwarf planet.
+</div></label>
+                <span id="newline"><br></span>
+                3. <div id="question_3">Pluto's largest moon is
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.a" name="q3" value="one">&nbsp;<span id="choice_3a_letter">A. </span><div id="choice_3a">Charon.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.b" name="q3" value="two">&nbsp;<span id="choice_3b_letter">B. </span><div id="choice_3b">Eris.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.c" name="q3" value="three">&nbsp;<span id="choice_3c_letter">C. </span><div id="choice_3c">Pluton.
+</div></label>
+                <span id="newline"><br></span>
+                4. <div id="question_4">A plutoid is an object
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.a" name="q4" value="one">&nbsp;<span id="choice_4a_letter">A. </span><div id="choice_4a">in the asteroid belt.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.b" name="q4" value="two">&nbsp;<span id="choice_4b_letter">B. </span><div id="choice_4b">beyond Neptune's orbit.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.c" name="q4" value="three">&nbsp;<span id="choice_4c_letter">C. </span><div id="choice_4c">in the Oort cloud.
+</div></label>
+		<span id="newline"><br></span>
+                4. <div id="question_5">What does IAU stand for?
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="5.a" name="q5" value="one">&nbsp;<span id="choice_4a_letter">A. </span><div id="choice_4a">International Astronomical Union
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="5.b" name="q5" value="two">&nbsp;<span id="choice_4b_letter">B. </span><div id="choice_4b">International Aerospace Union
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="5.c" name="q5" value="three">&nbsp;<span id="choice_4c_letter">C. </span><div id="choice_4c">International Astronaut Union
+</div></label>
+
+		<span id="newline"><br></span>
+                4. <div id="question_6">What is Ceres?
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="6.a" name="q6" value="one">&nbsp;<span id="choice_4a_letter">A. </span><div id="choice_4a">One of Jupiter's 67 known moons.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="6.b" name="q6" value="two">&nbsp;<span id="choice_4b_letter">B. </span><div id="choice_4b">The second of Saturn's rings.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="6.c" name="q6" value="three">&nbsp;<span id="choice_4c_letter">C. </span><div id="choice_4c">An asteroid in between Mars and Jupiter.
+</div></label>
+
+            </form>
+	
+</p>
+
+	<button type="button" id="done" class="btn btn-primary">Done</button>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	var interval = setInterval(function(){
+
+		var val = $("#counter").text();
+	
+		$("#counter").text(val - 1);
+		if(val == 1){ clearInterval(interval); readQuestion(); } 
+	
+	}, 1000);
+	//var loc = window.location.href;
+	//window.location.href = loc + "#" + name + "#" + email
+});
+
+//parseURL();
+function parseURL(){
+	var urldata = window.location.href.split("?")[1].split("#");
+	var data = {};
+	for(var dat in urldata){
+		//console.log(urldata[dat]);
+
+	}
+
+}
+
+function readQuestion(){
+	$("#countdown").hide();
+	$("#question").show();
+	
+	$("#timer").text(0);
+
+	timer = setInterval(function(){
+		var time = $("#timer").text();
+		$("#timer").text(parseInt(time)+1);
+	}, 100);
+}
+
+$("#done").click(function(){
+	var loc = window.location.href;
+	var curr = loc[loc.length-1];
+	loc[loc.length-1] = parseInt(curr) + 1;
+	var afterLoc = loc.split('?')[1];
+	
+	var answers = "";
+
+	var numAnswers = 0;
+	var inputs = document.getElementsByTagName("input");
+	for(var input in inputs){
+		var radio = inputs[input];
+		if(radio.checked){
+			numAnswers++;
+			answers += "#q4" + radio.name + "=" + radio.id;	
+		}	
+	}
+	
+	if(numAnswers < 4){
+		numAnswers = 0;
+		alert("Please answer all the questions");
+	}
+	else{
+		window.location.href = "hci10.html?" + afterLoc + answers;
+	}
+
+});
+</script>
+</html>

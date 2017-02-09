@@ -1,0 +1,39 @@
+<p id="story" style="color: black;">Our solar system is pretty well organized. There are the four, rocky, inner planets - Mercury, Venus, Earth, and Mars. There are the four outer gas giants - Jupiter, Saturn, Uranus, and Neptune. And then there's Pluto. It has enough matter to hold itself together like a ball. But its moon, Charon, is half its size. And it orbits the Sun at a different angle from the other planets.<br><br>Some years ago, the International Astronomical Union (IAU) voted to demote Pluto to what they called a "dwarf planet." Then things got complicated.<br><br>Ceres is an asteroid in the belt between Mars and Jupiter. But the description of the asteroid was similar to Pluto. They needed a way to tell the difference between rocky dwarf planets like Ceres and icy ones like Pluto.<br><br>They re-named Pluto as a "plutoid." This is a name for objects beyond Neptune's orbit. Shortly after this, they found another body, Eris, and its moons. It was similar to Pluto, and it was in the same region. It was called a plutoid, too. Then scientists thought again about Pluto. They thought maybe it was a planetessimal. The debate continues to this day over its status.</p>
+
+<form id="test_form" style="display: block;">
+                1. <div id="question_1">There are ______ rocky, inner planets.
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.a" name="q1" value="one">&nbsp;<span id="choice_1a_letter">A. </span><div id="choice_1a">three
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.b" name="q1" value="two">&nbsp;<span id="choice_1b_letter">B. </span><div id="choice_1b">four
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.c" name="q1" value="three">&nbsp;<span id="choice_1c_letter">C. </span><div id="choice_1c">five
+</div></label>
+                <span id="newline"><br></span>
+                2. <div id="question_2">The IAU voted to demote Pluto to a
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.a" name="q2" value="one">&nbsp;<span id="choice_2a_letter">A. </span><div id="choice_2a">planetoid.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.b" name="q2" value="two">&nbsp;<span id="choice_2b_letter">B. </span><div id="choice_2b">pluton.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.c" name="q2" value="three">&nbsp;<span id="choice_2c_letter">C. </span><div id="choice_2c">dwarf planet.
+</div></label>
+                <span id="newline"><br></span>
+                3. <div id="question_3">Pluto's largest moon is
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.a" name="q3" value="one">&nbsp;<span id="choice_3a_letter">A. </span><div id="choice_3a">Charon.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.b" name="q3" value="two">&nbsp;<span id="choice_3b_letter">B. </span><div id="choice_3b">Eris.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.c" name="q3" value="three">&nbsp;<span id="choice_3c_letter">C. </span><div id="choice_3c">Pluton.
+</div></label>
+                <span id="newline"><br></span>
+                4. <div id="question_4">A plutoid is an object
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.a" name="q4" value="one">&nbsp;<span id="choice_4a_letter">A. </span><div id="choice_4a">in the asteroid belt.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.b" name="q4" value="two">&nbsp;<span id="choice_4b_letter">B. </span><div id="choice_4b">beyond Neptune's orbit.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.c" name="q4" value="three">&nbsp;<span id="choice_4c_letter">C. </span><div id="choice_4c">in the Oort cloud.
+</div></label>
+            </form>

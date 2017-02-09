@@ -1,0 +1,39 @@
+<p id="story" style="color: black;">Born a slave on a Missouri farm in 1864, George Washington Carver grew to become one of the most prominent Black scientists of his time. He devoted his life to research projects involved with Southern agriculture, especially with peanuts. In fact, the products he derived from both peanuts and soybeans revolutionized the Southern economy. It released farmers from an excessive dependence on cotton.<br><br>He was raised by his owners, Moses and Susan Carver, after his father was killed and his mother was kidnapped by slave raiders. He showed an interest in plants and a great desire to learn new things. The Carvers taught him to read and write, and, when he was 11, he attended a school for Black children.<br><br>Despite his poor beginnings, Carver managed to obtain a high school education. He was then admitted as the first Black student of Simpson College in Iowa. He followed up at Iowa Agricultural College; while working as a janitor, he received a degree in agricultural science in 1894. Two years later, he received a Master's Degree from the same school and became the first African-American to serve on its faculty. Within a short time, his fame spread, and Booker T. Washington offered him a post at what is now Tuskegee University.<br><br>Among his many accomplishments, Carver developed more than 300 products from peanuts. These included a milk substitute, face powder, printer's ink, and soap. He also created more than 75 products from pecans, more than 100 more products from sweet potatoes, and a type of synthetic marble made from wood shavings.<br><br>The world took note. Carver received many awards for his work. In 1916, he was named a fellow of the Royal Society of Arts of London. In 1923, the National Association for the Advancement of Colored People (the NAACP) awarded him a medal for distinguished service in agricultural chemistry. In 1939, he received the Theodore Roosevelt Medal for his contributions to science.</p>
+
+<form id="test_form" style="display: block;">
+                1. <div id="question_1">George Washington Carver was born on a Missouri farm in
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.a" name="q1" value="one">&nbsp;<span id="choice_1a_letter">A. </span><div id="choice_1a">1864.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.b" name="q1" value="two">&nbsp;<span id="choice_1b_letter">B. </span><div id="choice_1b">1888.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.c" name="q1" value="three">&nbsp;<span id="choice_1c_letter">C. </span><div id="choice_1c">1894.
+</div></label>
+                <span id="newline"><br></span>
+                2. <div id="question_2">Carver devoted his life to research projects involved especially with
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.a" name="q2" value="one">&nbsp;<span id="choice_2a_letter">A. </span><div id="choice_2a">pecans.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.b" name="q2" value="two">&nbsp;<span id="choice_2b_letter">B. </span><div id="choice_2b">sweet potatoes.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.c" name="q2" value="three">&nbsp;<span id="choice_2c_letter">C. </span><div id="choice_2c">peanuts.
+</div></label>
+                <span id="newline"><br></span>
+                3. <div id="question_3">Carver was admitted as the first Black student of
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.a" name="q3" value="one">&nbsp;<span id="choice_3a_letter">A. </span><div id="choice_3a">Iowa Agricultural College.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.b" name="q3" value="two">&nbsp;<span id="choice_3b_letter">B. </span><div id="choice_3b">Simpson College.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.c" name="q3" value="three">&nbsp;<span id="choice_3c_letter">C. </span><div id="choice_3c">Tuskegee University.
+</div></label>
+                <span id="newline"><br></span>
+                4. <div id="question_4">The NAACP awarded him a medal for distinguished service in
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.a" name="q4" value="one">&nbsp;<span id="choice_4a_letter">A. </span><div id="choice_4a">agronomy.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.b" name="q4" value="two">&nbsp;<span id="choice_4b_letter">B. </span><div id="choice_4b">scientific achievement.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.c" name="q4" value="three">&nbsp;<span id="choice_4c_letter">C. </span><div id="choice_4c">agricultural chemistry.
+</div></label>
+            </form>

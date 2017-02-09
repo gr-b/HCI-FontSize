@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container" id="countdown" >
+	<h1> Starting in...</h1>
+	<hr>
+	<p style="font-size: 600px" id="counter">5</p>	
+</div> 
+
+<div class="container" id="question" hidden="true">
+	<h3> Please read the following text </h3>
+	<h3> Time(tenths of a second): </h3><h3 id="timer">0</h3>
+	<hr>
+	<p style="font-size: 32px; font-family: 'Times New Roman';" id="1">
+	Our solar system is pretty well organized. There are the four, rocky, inner planets - Mercury, Venus, Earth, and Mars. There are the four outer gas giants - Jupiter, Saturn, Uranus, and Neptune. And then there's Pluto. It has enough matter to hold itself together like a ball. But its moon, Charon, is half its size. And it orbits the Sun at a different angle from the other planets.<br><br>Some years ago, the International Astronomical Union (IAU) voted to demote Pluto to what they called a "dwarf planet." Then things got complicated.<br><br>Ceres is an asteroid in the belt between Mars and Jupiter. But the description of the asteroid was similar to Pluto. They needed a way to tell the difference between rocky dwarf planets like Ceres and icy ones like Pluto.<br><br>They re-named Pluto as a "plutoid." This is a name for objects beyond Neptune's orbit. Shortly after this, they found another body, Eris, and its moons. It was similar to Pluto, and it was in the same region. It was called a plutoid, too. Then scientists thought again about Pluto. They thought maybe it was a planetessimal. The debate continues to this day over its status.</p>
+
+
+
+
+	<!--</p>--!>
+	<button type="button" id="haveRead" class="btn btn-primary">Done Reading</button>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	var interval = setInterval(function(){
+
+		var val = $("#counter").text();
+	
+		$("#counter").text(val - 1);
+		if(val == 1){ clearInterval(interval); readQuestion(); } 
+	
+	}, 1000);
+	//var loc = window.location.href;
+	//window.location.href = loc + "#" + name + "#" + email
+});
+
+function readQuestion(){
+	$("#countdown").hide();
+	$("#question").show();
+	
+	$("#timer").text(0);
+
+	timer = setInterval(function(){
+		var time = $("#timer").text();
+		$("#timer").text(parseInt(time)+1);
+	}, 100);
+}
+
+$("#haveRead").click(function(){
+	clearInterval(timer);
+	var time = parseInt($("#timer").text());
+	
+	var loc = window.location.href;
+	var curr = loc[loc.length-1];
+	loc[loc.length-1] = parseInt(curr) + 1;
+	var afterLoc = loc.split('?')[1];
+	window.location.href = "hci9.html?" + afterLoc + "#time4=" + time;
+
+
+});
+</script>
+</html>

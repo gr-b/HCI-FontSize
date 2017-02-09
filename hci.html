@@ -1,0 +1,59 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container" id="page1">
+<h1>Hello, thanks for being my test subject!<small> Get ready to do some science!</small></h1>
+<div id="formhere"></div>
+<hr>
+<!--<h3> Before we get started, please enter your name and email:<small> no, I won't send you any emails</small></h3><h5><small> buy my professor might</small></h5>
+--!>
+
+<form>
+	<div class="form-group">
+		<label for="name">Full name:</label>
+		<input type="text" class="form-control" id="name">
+	</div>
+	<div class="form-group">
+		<label for="email">Email:</label>
+		<input type="email" class="form-control" id="email">
+		<h5><small>no, I won't send you any emails</small><h5>
+	<!--	<h6><small>but my professor might D:</small></h6> --!>
+	</div>
+	<button type="button" id="continue" class="btn btn-primary">Continue</button>
+</form>
+
+</div>
+<h6><small>Passages and some questions adapted from freereadingtest.com</small></h6>
+
+
+
+</body>
+<script type="text/javascript" src="experiment.js"></script>
+<script type="text/javascript">
+var form = {}
+var q = 0;
+var timer;
+
+// Assign button click function
+function get(id){ return document.getElementById(id); }
+document.getElementById("continue").onclick = function(){
+	//var name = document.getElementById("name").value;
+	//var email = document.getElementById("email").value;
+	var name = $("#name").val();
+	var email = $("#email").val();
+
+	window.location.href = "hci2.html?#name=" + name + "#email=" + email;
+}
+
+
+</script>
+
+</html>

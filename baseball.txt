@@ -1,0 +1,39 @@
+<p id="story" style="color: black;">Baseball is the "great American pastime," and one major aspect of the sport is the collecting and trading of special cards. Each of the cards has a Major League (or sometimes a Minor League) player on it, and it also has information about the player and his performance on the flip side.<br><br>Baseball had its beginnings in the mid-1800s, and by 1887, Goodwin &amp; Company of New York City had produced the first nationally distributed cards. They inserted them into packs of cigarettes and tobacco, such as the "Old Judge" brand. The card had a small picture on it, and the card fit in the wrapper with the tobacco, stiffening it. With less damage to the packs and a "freebie," as well, sales increased enormously.<br><br>In order to compete in the trading card market, other tobacco companies began placing cards in their packs. Topps Company began to produce baseball cards in 1951, and since they wanted to market them to children, they put the cards in packs of gum. Some cards were more "valuable" than others, and kids traded one for another to improve their collections.<br><br>All of the tobacco cards were much smaller than the cards of today, and they are extremely rare and valuable. One of the most famous is the 1909 T-206 Honus Wagner card. It has sold at auctions for over $1 million.</p>
+
+<form id="test_form" style="display: block;">
+                1. <div id="question_1">Baseball had its beginnings in
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.a" name="q1" value="one">&nbsp;<span id="choice_1a_letter">A. </span><div id="choice_1a">the mid-1800's.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.b" name="q1" value="two">&nbsp;<span id="choice_1b_letter">B. </span><div id="choice_1b">1887.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.c" name="q1" value="three">&nbsp;<span id="choice_1c_letter">C. </span><div id="choice_1c">1903.
+</div></label>
+                <span id="newline"><br></span>
+                2. <div id="question_2">Nationally distributed cards were produced by
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.a" name="q2" value="one">&nbsp;<span id="choice_2a_letter">A. </span><div id="choice_2a">Major League Baseball.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.b" name="q2" value="two">&nbsp;<span id="choice_2b_letter">B. </span><div id="choice_2b">Old Judge.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.c" name="q2" value="three">&nbsp;<span id="choice_2c_letter">C. </span><div id="choice_2c">Goodwin &amp; Company.
+</div></label>
+                <span id="newline"><br></span>
+                3. <div id="question_3">The company inserted the cards into
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.a" name="q3" value="one">&nbsp;<span id="choice_3a_letter">A. </span><div id="choice_3a">packages of gum.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.b" name="q3" value="two">&nbsp;<span id="choice_3b_letter">B. </span><div id="choice_3b">the tobacco wrapper.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.c" name="q3" value="three">&nbsp;<span id="choice_3c_letter">C. </span><div id="choice_3c">the retail market.
+</div></label>
+                <span id="newline"><br></span>
+                4. <div id="question_4">The 1909 T-206 card is the most
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.a" name="q4" value="one">&nbsp;<span id="choice_4a_letter">A. </span><div id="choice_4a">popular.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.b" name="q4" value="two">&nbsp;<span id="choice_4b_letter">B. </span><div id="choice_4b">valuable.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.c" name="q4" value="three">&nbsp;<span id="choice_4c_letter">C. </span><div id="choice_4c">interesting.
+</div></label>
+            </form>

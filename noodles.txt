@@ -1,0 +1,40 @@
+Do you know the name Momofuku Ando? If you don't, you probably don't live in Japan, but you do know what made him famous - he invented the "instant" noodle, also called ramen noodles, that now you see in the soup aisle of every store.<br><br>Ando was born in Taiwan. Faced with the inevitable food shortages in post-World War II Japan, Ando thought a quality, convenient noodle product would help to feed the masses.<br><br>At 23, he entered Ritsumeikan University and, at the same time, he founded a small merchandising firm in Osaka. The company went belly up, and Ando went bankrupt. However, he didn't give up. In 1948, he founded what later would become Nissin Co., in Ikeda, Osaka. It was a small, family-run company that initially produced salt.<br><br>Ando was sure a product with such simple instructions (remove the ramen from its package and place it in a bowl. Add boiling water, cover, and wait three minutes) would be a hit, but the Japanese food industry was critical. It rejected the product as a novelty with no future.<br><br>But they were wrong. The packages sold beyond anyone's expectations, and over ten other companies rushed to put their versions on the market. By the end of 1958, it was a staple.<br><br>Today, each Japanese person eats about 45 portions of ramen (bags and cups combined), each year. It's catching on in the U.S., too. Consumers there eat about nine portions each year.</p>
+
+
+<form id="test_form" style="display: block;">
+                1. <div id="question_1">Instant noodles were invented by
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.a" name="q1" value="one">&nbsp;<span id="choice_1a_letter">A. </span><div id="choice_1a">Mashahiru Yakami.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.b" name="q1" value="two">&nbsp;<span id="choice_1b_letter">B. </span><div id="choice_1b">Momofuku Ando.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="1.c" name="q1" value="three">&nbsp;<span id="choice_1c_letter">C. </span><div id="choice_1c">Mono Andasu.
+</div></label>
+                <span id="newline"><br></span>
+                2. <div id="question_2">Ramen's creator thought a quality noodle product would
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.a" name="q2" value="one">&nbsp;<span id="choice_2a_letter">A. </span><div id="choice_2a">sell well.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.b" name="q2" value="two">&nbsp;<span id="choice_2b_letter">B. </span><div id="choice_2b">establish him in the food industry.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="2.c" name="q2" value="three">&nbsp;<span id="choice_2c_letter">C. </span><div id="choice_2c">help to feed the masses.
+</div></label>
+                <span id="newline"><br></span>
+                3. <div id="question_3">Nissin Co. originally produced
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.a" name="q3" value="one">&nbsp;<span id="choice_3a_letter">A. </span><div id="choice_3a">ramen.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.b" name="q3" value="two">&nbsp;<span id="choice_3b_letter">B. </span><div id="choice_3b">salt.
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="3.c" name="q3" value="three">&nbsp;<span id="choice_3c_letter">C. </span><div id="choice_3c">cups.
+</div></label>
+                <span id="newline"><br></span>
+                4. <div id="question_4">Today, each Japanese person eats about ______ of ramen per year.
+</div>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.a" name="q4" value="one">&nbsp;<span id="choice_4a_letter">A. </span><div id="choice_4a">9 portions
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.b" name="q4" value="two">&nbsp;<span id="choice_4b_letter">B. </span><div id="choice_4b">45 portions
+</div></label>
+                   &nbsp;&nbsp;&nbsp;<label><input type="radio" id="4.c" name="q4" value="three">&nbsp;<span id="choice_4c_letter">C. </span><div id="choice_4c">60 portions
+</div></label>
+            </form>

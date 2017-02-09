@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="experiment.js"></script>
+</head>
+<body>
+
+
+<div class="container" id="page1">
+<h1>Almost done! One more question:<small></small></h1>
+<div id="formhere"></div>
+<hr>
+<!--<h3> Before we get started, please enter your name and email:<small> no, I won't send you any emails</small></h3><h5><small> buy my professor might</small></h5>
+--!>
+
+<form>
+	<div class="form-group">
+		<label for="name">Please rate each question on how easy the text was to read (1 is the least, 5 is the highest)</label>
+		<br>
+		<label> Question 1: </label><label id='1'>5</label> 
+		<p style="font-size: 8px; font-family: 'Times New Roman';"> Momofuku Ando</p>
+		<input type="range" min="1" max="5" id="range1" value="5"/>
+	
+		<label> Question 2: </label><label id='2'>5</label> 
+		<p style="font-size: 12px; font-family: 'Times New Roman';"> Baseball</p>
+		<input type="range" min="1" max="5" id="range2" value="5"/>
+	
+		<label> Question 3: </label><label id='3'>5</label> 
+		<p style="font-size: 20px; font-family: 'Times New Roman';"> Washington Carver</p>
+		<input type="range" min="1" max="5" id="range3" value="5"/>
+
+		<label> Question 4: </label><label id='4'>5</label> 
+		<p style="font-size: 32px; font-family: 'Times New Roman';"> Pluto</p>
+		<input type="range" min="1" max="5" id="range4" value="5"/>
+
+	</div>
+	<button type="button" id="continue" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="experiment.js"></script>
+<script type="text/javascript">
+var form = {}
+var q = 0;
+var timer;
+
+//for(var i=1;i<5;i++){
+var i = 1;
+for(i=1;i<5;i++){
+	eval('$("#range" + ' + i + ').on("input", function(){ $("#" + ' + i + ').text( $("#range" + ' + i + ').val()); });');
+}
+
+
+// Assign button click function
+function get(id){ return document.getElementById(id); }
+document.getElementById("continue").onclick = function(){
+	
+	form.raw = window.location.href.split("?")[1];
+	parseURL();
+	
+	// Get all range inputs
+	var inputs = document.getElementsByTagName("input");
+	for(var input in inputs){
+		var range = inputs[input];
+		form[range.id] = range.value;	
+	}
+
+	sendObject(form, "griffin.bishop24@gmail.com");
+	//window.location.href = "hci2.html?#name=" + name + "#email=" + email;
+}
+
+function parseURL(){
+	var urldata = window.location.href.split("?")[1].split("#");
+	var data = {};
+	for(var dat in urldata){
+		//console.log(urldata[dat]);
+		var pair = urldata[dat].split('=');
+		form[pair[0]] = pair[1];
+	}
+
+}
+
+</script>
+
+</html>
